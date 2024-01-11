@@ -1,3 +1,1 @@
-# Advent of Code
-
-A repository for each, likely aborted, advent of code attempt
+# Advent of Code 2023 - Typescript
