@@ -40,7 +40,7 @@ function getDestination(mapIndex: string, instruction: number) {
     return map[mapIndex][instruction];
 }
 
-console.log(`Part 1: ${runMap()} steps`);
+// console.log(`Part 1: ${runMap()} steps`);
 
 // while not all is Ending node
 // run next loop
@@ -51,9 +51,11 @@ function part2() {
     const instructions2 = instructions;
     console.log("a");
     let currentNodes = Object.keys(map).filter(x => x.slice(-1) === 'A');
+    console.log(JSON.stringify(currentNodes));
     const endingNodes = Object.keys(map).filter(x => x.slice(-1) === "Z");
-    currentNodes = currentNodes.filter((x, i) => i === 3);
-    while(currentNodes.some(x => endingNodes.indexOf(x) === -1) && i < 4000000) {
+    console.log(JSON.stringify(endingNodes));
+//#    currentNodes = currentNodes.filter((x, i) => i === 3);
+    while(!currentNodes.every(x => endingNodes.indexOf(x) !== -1)) {
         console.log("-----");
         console.log(i);
         console.log(currentNodes);
