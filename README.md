@@ -2,6 +2,12 @@
 
 A repository for each, likely aborted, advent of code attempt
 
-2022 - Typescript - sure I did more than this but where is it?
-2023 - Typescript
-2025 - Python
+## 2022 - Typescript
+
+- I'm sure I did more than this, where is it?
+
+## 2023 - Typescript
+
+- Day 8 solution takes far too long
+
+## 2025 - Python
